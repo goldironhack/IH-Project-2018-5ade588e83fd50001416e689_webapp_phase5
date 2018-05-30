@@ -1,15 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Hello World!</h1>
-        <button id="btn">Click me</button>
-    </div>
-    <script src="index.js"></script>
-</body>
+<html>
+  <head>
+  	<meta charset="UTF-8">
+  	<link rel="stylesheet" type="text/css" href="style.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://www.jqueryscript.net/demo/jQuery-Plugin-To-Convert-HTML-Table-To-CSV-tabletoCSV/jquery.tabletoCSV.js"></script>
+  	<script type="text/javascript" src="index.js"></script>
+  	<title>Place Finder</title>
+  </head>
+  <body>
+  	<header>
+  		<h1><b>Place Finder</b></h1>
+  		<nav>
+  			<ul class="menu">
+  				<li><a href="#">About Us</a></li>
+  				<li><a href="#">Contact</a></li>
+  			</ul>
+  		</nav>
+  	</header>
+    <div id="map"></div>
+    <section class="wrapper">
+    	<aside>
+    		<p>
+    		We know that being far away from your home its something difficult but Place Finder will help you to make easier your stay in new york, you can search for a place by differents parameters and Place Finder will show you the best options, so you can choose the one that best suits your needs
+    	  </p>
+    	</aside>
+    	<select name="" id="selector" onchange="holita()">
+			  <option value="safe">The 10 Safest Districts</option>
+			  <option value="closest">The 10 Closest Districts to NYU</option>
+			  <option value="affordable">The 10 Most Affordable Districts</option>
+			  <option value="top 3">Top 3 Districts</option>
+		  </select>
+    </section>
+    <footer>
+    	<p>
+    		Design By Julio Cesar Ovalle Lara - Ingenieria De Software 1 - 2018-1
+    	</p>
+    </footer>
+    <script language="JavaScript">
+    <!--
+    document.writeln("<script src=\"https://maps.googleapis.com/maps/api/js?key=AIzaSyBY3_5_wY0wDdIr5o8g_9yAWn4zF0DrGPU&libraries=geometry&callback=initMap\" async defer></script>");
+    //-->
+    </script>
+  </body>
 </html>
